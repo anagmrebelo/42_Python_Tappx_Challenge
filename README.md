@@ -1,4 +1,4 @@
-#42_Python_Tappx_Challenge
+#42_Python_Tappx_Challenge#
 
 Este proyecto tiene como objetivo asignar un conjunto de vídeos a cada artículo en función de su contexto. Para esto, se utiliza un archivo json de artículos y otro archivo json de vídeos, los cuales contienen información relevante acerca de cada uno de ellos.
 
