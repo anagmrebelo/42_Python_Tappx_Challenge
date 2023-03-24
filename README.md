@@ -1,31 +1,10 @@
 <h1>42_Python_Tappx_Challenge</h1>
 
+Trabajo Grupal: Christian Sitjà, Nil Biescas, Ana Rebelo
+
 Este proyecto tiene como objetivo asignar un conjunto de vídeos a cada artículo en función de su contexto. Para esto, se utiliza un archivo json de artículos y otro archivo json de vídeos, los cuales contienen información relevante acerca de cada uno de ellos.
 
 Para ejecutar el programa, se debe compilar el archivo tappx.py con Python 3 mediante el comando "python3 tappx.py". Una vez finalizado el proceso, se generará un archivo entrega.json con los resultados del emparejamiento.
-
-El archivo entrega.json tiene el siguiente formato:
-    {
-    "id-del-articulo1": {
-        "id_del_video_relacionado1": {
-            "score":"score-de-la-relación"
-        },
-        "id_del_video_relacionado2":{
-            "score":"score-de-la-relación"
-        },
-        .
-        .            
-    },
-    "id-del-articulo2": {
-        "id_del_video_relacionado1": {
-            "score":"score-de-la-relacion"
-        },
-        .   
-        .            
-    }
-    .
-    .        
-}
 
 La lógica utilizada para calcular el score se basa en la similitud vectorial del coseno ('cosine similarity') entre las keywords del artículo y las keywords del video. Para ello, se utilizan dos modelos pre-entrenados: BERT para la creación de vectores y Rake para la obtención de nuevas keywords. Además, se considera el título del artículo en la comparación.
 
